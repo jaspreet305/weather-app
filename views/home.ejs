@@ -1,0 +1,21 @@
+<%- include("partials/header"); -%>
+
+<img src="background-pattern.png" class="background-img">
+
+<div class="container">
+  <h2 class="heading">Find Your Weather</h2>
+</div>
+
+<form action="/" method="post" class="search-bar">
+  <input id="cityInput" type="text" name="cityName" pattern=".*\S.*" required>
+
+  <button class="search-btn" type="submit">
+    <span>Search</span>
+  </button>
+
+</form>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="app.js" charset="utf-8"></script>
+
+<%- include("partials/footer"); -%>
